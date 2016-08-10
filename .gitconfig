@@ -1,0 +1,6 @@
+[user]
+	name = SyncMr
+	emal = talk2pragadheesh@gmail.com
+	email = talk2pragadheesh@gmail.com
+[core]
+	excludesfile = ~/.gitignore
