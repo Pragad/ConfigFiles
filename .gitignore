@@ -63,3 +63,15 @@ local.properties
 *.war
 *.ear
 .ear
+
+# C++ Symbol table Files
+*.dSYM/
+
+# Compiled Object files
+*.o
+*.obj
+
+# C++ Executables
+*.exe
+*.out
+

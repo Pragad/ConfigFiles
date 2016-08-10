@@ -26,12 +26,12 @@ alias lh="ls -lhAt"
 alias l.='ls -d .* --color=auto'
 
 ## Frequent cd lists
-alias cdprag='cd ~/PRAGADH/'
-alias cddev='cd ~/PRAGADH/DEV/'
-alias cdcpp='cd ~/Prag/Dev/cpp'
-alias cdpy='cd ~/Prag/Dev/Python'
-alias cdjava='cd ~/Prag/Dev/java'
+alias cdprag='cd /Users/pragadh/PRAGADH'
 alias cddev='cd /Users/pragadh/PRAGADH/DEV'
+alias cdal='cd /Users/pragadh/PRAGADH/DEV/Algos'
+alias cdcpp='cd /Users/pragadh/PRAGADH/DEV/LearnCpp'
+alias cdpy='cd /Users/pragadh/PRAGADH/DEV/LearnPython'
+alias cdjava='cd /Users/pragadh/PRAGADH/DEV/LearnJava'
 alias vim='mvim -v'
 
 ## VIM aliases
