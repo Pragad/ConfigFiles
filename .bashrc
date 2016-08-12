@@ -3,6 +3,11 @@ export EDITOR=vim
 # Change the way BASH prompt gets displayed
 export PS1="\W \$"
 
+# Add colors to bash
+# http://stackoverflow.com/questions/1550288/os-x-terminal-colors
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
 alias vi=vim
 alias cls=clear
 
