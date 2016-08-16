@@ -44,6 +44,8 @@ tmp/
 .loadpath
 .recommenders
 .settings/
+.project
+.classpath
 
 ### Java ###
 *.class

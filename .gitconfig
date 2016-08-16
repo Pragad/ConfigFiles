@@ -4,3 +4,5 @@
 	email = talk2pragadheesh@gmail.com
 [core]
 	excludesfile = ~/.gitignore
+[mergetool]
+	keepBackup = false
