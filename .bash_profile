@@ -12,3 +12,5 @@ source ~/.bashrc  # get my Bash aliases
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+# Setup MySQL path
+export PATH=/usr/local/mysql/bin:$PATH
