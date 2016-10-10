@@ -30,6 +30,9 @@ alias lh="ls -lhAt"
 ## Show hidden files ##
 alias l.='ls -d .* --color=auto'
 
+## Build C++ file using gcc##
+alias mkcp='g++ -std=c++11'
+
 ## Frequent cd lists
 alias cdpr='cd /Users/pragadh/PRAGADH'
 alias cdde='cd /Users/pragadh/PRAGADH/DEV'
