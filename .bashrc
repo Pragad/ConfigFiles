@@ -51,3 +51,23 @@ alias vimrc='vim ~/.vimrc'
 
 # How do I make Bash' tab complete automatically cycle through options OSX
 bind '"\t":menu-complete'
+
+# From Work
+export P4DIFF=vimdiff
+export PATH=:.:$PATH:$HOME/bin:/usr/X11R6/bin:./usr/sbin:/sbin:~/bin:/usr/local/bin
+
+LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH
+export LS_COLORS='di=01;33'
+#export LS_COLORS='di=01;37'
+
+shopt -s histappend
+export PROMPT_COMMAND='history -a; history -n'
+
+export HISTSIZE=100000
+export HISTFILESIZE=500000
+export HISTCONTROL="ignoreboth:erasedups"
+export HISTIGNORE="pwd:ls:ll:cd ..:cd:exit"
+
+alias ls='ls --color=yes'
+
