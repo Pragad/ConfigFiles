@@ -1,0 +1,11 @@
+#Default GitHub
+Host github.com
+    HostName github.com
+    User SyncMr
+    IdentityFile ~/.ssh/id_rsa
+
+#Anit's Git
+Host github-Anit11
+  HostName github.com
+  User Anit11
+  IdentityFile ~/.ssh/id_rsa_ANIT11
