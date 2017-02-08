@@ -50,7 +50,8 @@ alias cdja='cd /Users/pragad/ItsMine/Dev_Git/LearnJava'
 alias cdot='cd /Users/pragad/ItsMine/Dev_Git/OtherLearnings'
 
 # Ssh to komprise's observer
-alias sshko='ssh kompuser@10.1.155.54'
+#alias sshko='ssh kompuser@10.1.155.54'
+alias sshko='/Users/pragad/ItsMine/Dev_Git/OtherLearnings/Scripts/BashShellScripts/sshToKompriseKovaExpect'
 
 alias vim='mvim -v'
 alias python='python3'
@@ -66,10 +67,7 @@ bind '"\t":menu-complete'
 
 # From Work
 export P4DIFF=vimdiff
-export PATH=:.:$PATH:$HOME/bin:/usr/X11R6/bin:./usr/sbin:/sbin:~/bin:/usr/local/bin
 
-LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH
 export LS_COLORS='di=01;33'
 #export LS_COLORS='di=01;37'
 
