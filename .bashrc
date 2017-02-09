@@ -49,6 +49,9 @@ alias cdpy='cd /Users/pragad/ItsMine/Dev_Git/LearnPython'
 alias cdja='cd /Users/pragad/ItsMine/Dev_Git/LearnJava'
 alias cdot='cd /Users/pragad/ItsMine/Dev_Git/OtherLearnings'
 
+# Compile C++ file
+alias mkcp='g++ -std=c++11 '
+
 # Ssh to komprise's observer
 #alias sshko='ssh kompuser@10.1.155.54'
 alias sshko='/Users/pragad/ItsMine/Dev_Git/OtherLearnings/Scripts/BashShellScripts/sshToKompriseKovaExpect'
