@@ -36,6 +36,10 @@ alias mkcp='g++ -std=c++11'
 ## Frequent cd lists
 alias srcbashrc='source ~/.bashrc'
 
+# Centos
+alias cdpr='cd /home/kompuser/pragadtmp'
+alias cdjni='cd /home/kompuser/pragadtmp/Code/kpsrc/kjni'
+
 alias cdmine='cd /Users/pragad/ItsMine'
 alias cdko='cd /Users/pragad/Komprise'
 alias cdte='cd /Users/pragad/Komprise/Team'
@@ -56,7 +60,7 @@ alias mkcp='g++ -std=c++11 '
 #alias sshko='ssh kompuser@10.1.155.54'
 alias sshko='/Users/pragad/ItsMine/Dev_Git/OtherLearnings/Scripts/BashShellScripts/sshToKompriseKovaExpect'
 
-alias vim='mvim -v'
+#alias vim='mvim -v'
 alias python='python3'
 
 ## VIM aliases
