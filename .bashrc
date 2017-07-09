@@ -43,6 +43,8 @@ alias cdte='cd /Users/pragad/Komprise/Team'
 alias cdco='cd /Users/pragad/Komprise/Code'
 alias cdkpsrc='cd /Users/pragad/Komprise/Code/kpsrc'
 alias cdkdc='cd /Users/pragad/Komprise/Code/kpsrc/kdc'
+alias cdkpsrcprod='cd /Users/pragad/Komprise/Code/kpsrc-prod'
+alias cdkdcprod='cd /Users/pragad/Komprise/Code/kpsrc-prod/kdc'
 
 alias cdal='cd /Users/pragad/ItsMine/Dev_Git/Algos'
 alias cdcp='cd /Users/pragad/ItsMine/Dev_Git/LearnCpp'
@@ -58,15 +60,15 @@ alias dirstart='echo "~/director/bin/start.sh" ; ~/director/bin/start.sh'
 alias dirstop='echo "~/director/bin/shutdown.sh" ; ~/director/bin/shutdown.sh'
 alias dirdel='echo "sudo rm -rf director/apache-tomcat-8.0.24/webapps/ROOT*" ; sudo rm -rf director/apache-tomcat-8.0.24/webapps/ROOT*'
 
-# Compile C++ file
-alias mkcp='g++ -std=c++11 '
-
 # Ssh to komprise's observer
 #alias sshko='ssh kompuser@10.1.155.54'
-alias sshko='/Users/pragad/ItsMine/Dev_Git/OtherLearnings/Scripts/BashShellScripts/sshToKompriseKovaExpect2'
+alias sshko49='/Users/pragad/ItsMine/Dev_Git/OtherLearnings/Scripts/BashShellScripts/sshToKompriseKovaExpect49'
+alias sshko40='/Users/pragad/ItsMine/Dev_Git/OtherLearnings/Scripts/BashShellScripts/sshToKompriseKovaExpect40'
 alias sshna='/Users/pragad/ItsMine/Dev_Git/OtherLearnings/Scripts/BashShellScripts/sshToNetAppCmodeFiler'
-alias scpob='scp observer/target/observer-1.0-SNAPSHOT.jar kompuser@10.1.155.49:~/lib'
-alias scpdi='scp director/web/target/web-1.0-SNAPSHOT.war  kompuser@10.1.155.49:~/director/apache-tomcat-8.0.24/webapps/ROOT.war'
+alias scpob='echo "scp observer/target/observer-1.0-SNAPSHOT.jar kompuser@10.1.155.49:~/lib" ; scp observer/target/observer-1.0-SNAPSHOT.jar kompuser@10.1.155.49:~/lib'
+alias scpdir='echo "scp director/web/target/web-1.0-SNAPSHOT.war  kompuser@10.1.155.49:~/director/apache-tomcat-8.0.24/webapps/ROOT.war" ; scp director/web/target/web-1.0-SNAPSHOT.war  kompuser@10.1.155.49:~/director/apache-tomcat-8.0.24/webapps/ROOT.war'
+alias scpobprod='echo "scp observer/target/observer-2.2.2.jar kompuser@10.1.155.40:~/lib" ; scp observer/target/observer-2.2.2.jar kompuser@10.1.155.40:~/lib'
+alias scpdirprod='echo "scp director/web/target/web-2.2.2.war  kompuser@10.1.155.40:~/director/apache-tomcat-8.0.24/webapps/ROOT.war" ; scp director/web/target/web-2.2.2.war  kompuser@10.1.155.40:~/director/apache-tomcat-8.0.24/webapps/ROOT.war'
 #alias vim='mvim -v'
 #alias python='python3'
 
@@ -80,16 +82,16 @@ alias srcbashrc='source ~/.bashrc'
 alias srcvimrc='source ~/.vimrc'
 
 # How do I make Bash' tab complete automatically cycle through options OSX
-bind '"\t":menu-complete'
+#bind '"\t":menu-complete'
 
 # From Work
-export P4DIFF=vimdiff
+#export P4DIFF=vimdiff
 
-export LS_COLORS='di=01;33'
-#export LS_COLORS='di=01;37'
+#export LS_COLORS='di=01;33'
+##export LS_COLORS='di=01;37'
 
-shopt -s histappend
-export PROMPT_COMMAND='history -a; history -n'
+#shopt -s histappend
+#export PROMPT_COMMAND='history -a; history -n'
 
 export HISTSIZE=100000
 export HISTFILESIZE=500000
