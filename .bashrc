@@ -65,6 +65,7 @@ alias dirdel='echo "sudo rm -rf director/apache-tomcat-8.0.24/webapps/ROOT*" ; s
 alias sshko49='/Users/pragad/ItsMine/Dev_Git/OtherLearnings/Scripts/BashShellScripts/sshToKompriseKovaExpect49'
 alias sshko40='/Users/pragad/ItsMine/Dev_Git/OtherLearnings/Scripts/BashShellScripts/sshToKompriseKovaExpect40'
 alias sshna='/Users/pragad/ItsMine/Dev_Git/OtherLearnings/Scripts/BashShellScripts/sshToNetAppCmodeFiler'
+alias sshk='/Users/pragad/ItsMine/Dev_Git/OtherLearnings/Scripts/BashShellScripts/sshToKompriseWithPassword'
 alias scpob='echo "scp observer/target/observer-1.0-SNAPSHOT.jar kompuser@10.1.155.49:~/lib" ; scp observer/target/observer-1.0-SNAPSHOT.jar kompuser@10.1.155.49:~/lib'
 alias scpdir='echo "scp director/web/target/web-1.0-SNAPSHOT.war  kompuser@10.1.155.49:~/director/apache-tomcat-8.0.24/webapps/ROOT.war" ; scp director/web/target/web-1.0-SNAPSHOT.war  kompuser@10.1.155.49:~/director/apache-tomcat-8.0.24/webapps/ROOT.war'
 alias scpobprod='echo "scp observer/target/observer-2.2.2.jar kompuser@10.1.155.40:~/lib" ; scp observer/target/observer-2.2.2.jar kompuser@10.1.155.40:~/lib'
