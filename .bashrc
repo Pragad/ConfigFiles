@@ -75,7 +75,7 @@ alias scpcn='echo "scp changenotify/server/target/changenotify-server-1.0-SNAPSH
 alias scpobprod='echo "scp observer/target/observer-2.2.2.jar kompuser@10.1.155.40:~/lib" ; scp observer/target/observer-2.2.2.jar kompuser@10.1.155.40:~/lib'
 alias scpdirprod='echo "scp director/web/target/web-2.2.2.war  kompuser@10.1.155.40:~/director/apache-tomcat-8.0.24/webapps/ROOT.war" ; scp director/web/target/web-2.2.2.war  kompuser@10.1.155.40:~/director/apache-tomcat-8.0.24/webapps/ROOT.war'
 #alias vim='mvim -v'
-#alias python='python3'
+alias python='python3'
 
 ## VIM aliases
 alias vimac='vim /Users/pragad/ItsMine/Dev_Git/OtherLearnings/MACStuff/macbook_shortcuts.txt'
