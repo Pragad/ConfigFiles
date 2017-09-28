@@ -64,9 +64,14 @@ alias dirdel='echo "sudo rm -rf director/apache-tomcat-8.0.24/webapps/ROOT*" ; s
 #alias sshko='ssh kompuser@10.1.155.54'
 alias sshko49='/Users/pragad/ItsMine/Dev_Git/OtherLearnings/Scripts/BashShellScripts/sshToKompriseKovaExpect49'
 alias sshko40='/Users/pragad/ItsMine/Dev_Git/OtherLearnings/Scripts/BashShellScripts/sshToKompriseKovaExpect40'
+alias sshko25='/Users/pragad/ItsMine/Dev_Git/OtherLearnings/Scripts/BashShellScripts/sshToKompriseKovaExpect25'
 alias sshna='/Users/pragad/ItsMine/Dev_Git/OtherLearnings/Scripts/BashShellScripts/sshToNetAppCmodeFiler'
+alias sshk='/Users/pragad/ItsMine/Dev_Git/OtherLearnings/Scripts/BashShellScripts/sshToKompriseWithPassword'
 alias scpob='echo "scp observer/target/observer-1.0-SNAPSHOT.jar kompuser@10.1.155.49:~/lib" ; scp observer/target/observer-1.0-SNAPSHOT.jar kompuser@10.1.155.49:~/lib'
 alias scpdir='echo "scp director/web/target/web-1.0-SNAPSHOT.war  kompuser@10.1.155.49:~/director/apache-tomcat-8.0.24/webapps/ROOT.war" ; scp director/web/target/web-1.0-SNAPSHOT.war  kompuser@10.1.155.49:~/director/apache-tomcat-8.0.24/webapps/ROOT.war'
+alias scpob25='echo "scp observer/target/observer-1.0-SNAPSHOT.jar kompuser@10.1.155.25:~/lib" ; scp observer/target/observer-1.0-SNAPSHOT.jar kompuser@10.1.155.25:~/lib'
+alias scpdir25='echo "scp director/web/target/web-1.0-SNAPSHOT.war  kompuser@10.1.155.25:~/director/apache-tomcat-8.0.24/webapps/ROOT.war" ; scp director/web/target/web-1.0-SNAPSHOT.war  kompuser@10.1.155.49:~/director/apache-tomcat-8.0.24/webapps/ROOT.war'
+alias scpcn='echo "scp changenotify/server/target/changenotify-server-1.0-SNAPSHOT.jar kompuser@10.1.155.49:~/lib" ; scp changenotify/server/target/changenotify-server-1.0-SNAPSHOT.jar kompuser@10.1.155.25:~/lib'
 alias scpobprod='echo "scp observer/target/observer-2.2.2.jar kompuser@10.1.155.40:~/lib" ; scp observer/target/observer-2.2.2.jar kompuser@10.1.155.40:~/lib'
 alias scpdirprod='echo "scp director/web/target/web-2.2.2.war  kompuser@10.1.155.40:~/director/apache-tomcat-8.0.24/webapps/ROOT.war" ; scp director/web/target/web-2.2.2.war  kompuser@10.1.155.40:~/director/apache-tomcat-8.0.24/webapps/ROOT.war'
 #alias vim='mvim -v'
@@ -99,3 +104,9 @@ export HISTCONTROL="ignoreboth:erasedups"
 export HISTIGNORE="pwd:ls:ll:cd ..:cd:exit"
 
 #alias ls='ls --color=yes'
+
+# FitBit
+export CLIENT_ID=228NTX
+export CLIENT_SECRET=23918ff7ecb77e876425efdc54dab3e3
+export SESSION_SECRET=
+export CALLBACK_URL=http://localhost:3000/callback

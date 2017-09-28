@@ -18,6 +18,9 @@ export PATH=/usr/local/bin:$PATH
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+# Export CLASSPATH to include external Java libraries
+export CLASSPATH=${CLASSPATH}:/Users/pragad/ItsMine/Dev_Git/JavaLibraries
+
 # Setup MySQL path
 #export PATH=/usr/local/mysql/bin:$PATH
 export PATH="/usr/local/opt/openssl/bin:$PATH"
