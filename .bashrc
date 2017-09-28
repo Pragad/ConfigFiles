@@ -34,8 +34,8 @@ alias l.='ls -d .* --color=auto'
 alias mkcp='g++ -std=c++11'
 
 # Centos
-alias cdpr='cd /home/kompuser/pragadtmp'
-alias cdjni='cd /home/kompuser/pragadtmp/Code/kpsrc/kjni'
+#alias cdpr='cd /home/kompuser/pragadtmp'
+#alias cdjni='cd /home/kompuser/pragadtmp/Code/kpsrc/kjni'
 
 alias cdmine='cd /Users/pragad/ItsMine'
 alias cdko='cd /Users/pragad/Komprise'
@@ -110,3 +110,9 @@ export CLIENT_ID=228NTX
 export CLIENT_SECRET=23918ff7ecb77e876425efdc54dab3e3
 export SESSION_SECRET=
 export CALLBACK_URL=http://localhost:3000/callback
+
+# The Fuck
+# https://github.com/nvbn/thefuck#experimental-instant-mode
+eval $(thefuck --alias)
+# You can use whatever you want as an alias, like for Mondays:
+eval $(thefuck --alias FUCK)
