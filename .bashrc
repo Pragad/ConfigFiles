@@ -37,6 +37,9 @@ alias mkcp='g++ -std=c++11'
 #alias cdpr='cd /home/kompuser/pragadtmp'
 #alias cdjni='cd /home/kompuser/pragadtmp/Code/kpsrc/kjni'
 
+# Get IP address for Mac
+alias getip='ipconfig getifaddr en0'
+
 alias cdmine='cd /Users/pragad/ItsMine'
 alias cdko='cd /Users/pragad/Komprise'
 alias cdte='cd /Users/pragad/Komprise/Team'
