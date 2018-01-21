@@ -116,6 +116,6 @@ export CALLBACK_URL=http://localhost:3000/callback
 
 # The Fuck
 # https://github.com/nvbn/thefuck#experimental-instant-mode
-eval $(thefuck --alias)
+#eval $(thefuck --alias)
 # You can use whatever you want as an alias, like for Mondays:
-eval $(thefuck --alias FUCK)
+#eval $(thefuck --alias FUCK)
