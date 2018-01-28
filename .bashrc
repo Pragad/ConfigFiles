@@ -40,7 +40,7 @@ alias mkcp='g++ -std=c++11'
 # Get IP address for Mac
 alias getip='ipconfig getifaddr en0'
 
-alias cdmine='cd /Users/pragad/ItsMine'
+alias cdmine='cd /Users/pragad/Pragad/ItsMine'
 alias cdko='cd /Users/pragad/Komprise'
 alias cdte='cd /Users/pragad/Komprise/Team'
 alias cdco='cd /Users/pragad/Komprise/Code'
@@ -49,11 +49,11 @@ alias cdkdc='cd /Users/pragad/Komprise/Code/kpsrc/kdc'
 alias cdkpsrcprod='cd /Users/pragad/Komprise/Code/kpsrc-prod'
 alias cdkdcprod='cd /Users/pragad/Komprise/Code/kpsrc-prod/kdc'
 
-alias cdal='cd /Users/pragad/ItsMine/Dev_Git/Algos'
-alias cdcp='cd /Users/pragad/ItsMine/Dev_Git/LearnCpp'
-alias cdpy='cd /Users/pragad/ItsMine/Dev_Git/LearnPython'
-alias cdja='cd /Users/pragad/ItsMine/Dev_Git/LearnJava'
-alias cdot='cd /Users/pragad/ItsMine/Dev_Git/OtherLearnings'
+alias cdal='cd /Users/pragad/Pragad/Code/Algos'
+alias cdcp='cd /Users/pragad/Pragad/Code/LearnCpp'
+alias cdpy='cd /Users/pragad/Pragad/Code/LearnPython'
+alias cdja='cd /Users/pragad/Pragad/Code/LearnJava'
+alias cdot='cd /Users/pragad/Pragad/Code/OtherLearnings'
 
 # Komprise Observer Director
 alias obstart='echo "observer start" ; observer start'
@@ -81,7 +81,7 @@ alias scpdirprod='echo "scp director/web/target/web-2.2.2.war  kompuser@10.1.155
 alias python='python3'
 
 ## VIM aliases
-alias vimac='vim /Users/pragad/ItsMine/Dev_Git/OtherLearnings/MACStuff/macbook_shortcuts.txt'
+alias vimac='vim /Users/pragad/Pragad/Code/OtherLearnings/MACStuff/macbook_shortcuts.txt'
 alias viko='vim /Users/pragad/Komprise/KompriseLearnings.txt'
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
