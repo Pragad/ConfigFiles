@@ -2,14 +2,16 @@ export EDITOR=vim
 
 # Change the way BASH prompt gets displayed
 export PS1="\W \$"
-
+#PS1='\[\e[s\e[1;1H\e[42m\e[K\h \u ipaddress\e[0m\e[u\]\w \$ '
+#===========================================================
+# Make Bash behave like VIM
+# https://superuser.com/questions/485139/how-can-i-make-my-shell-behave-like-vim
+#set -o vi
+#===========================================================
 # Add colors to bash
 # http://stackoverflow.com/questions/1550288/os-x-terminal-colors
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
-
-alias vi=vim
-alias cls=clear
 
 ## a quick way to get out of current directory ##
 alias ..='cd ..'
@@ -36,9 +38,34 @@ alias mkcp='g++ -std=c++11'
 # Centos
 #alias cdpr='cd /home/kompuser/pragadtmp'
 #alias cdjni='cd /home/kompuser/pragadtmp/Code/kpsrc/kjni'
-
+#==========================================================
+# Alias's for safe and forced reboots
+alias rebootsafe='sudo shutdown -r now'
+alias rebootforce='sudo shutdown -r -n now'
+#==========================================================
+alias vi=vim
+alias cls=clear
+#==========================================================
 # Get IP address for Mac
 alias getip='ipconfig getifaddr en0'
+#==========================================================
+#Git shortcuts
+alias gstat='echo "git status" ; git status'
+alias gdiff='echo "git diff" ; git diff'
+alias gadd='echo "git add" ; git add '
+alias gbr='echo "git branch -vv" ; git branch -vv'
+alias gbrd='echo "git branch -D " ; git branch -D '
+alias gch='echo "git checkout" ; git checkout '
+alias gchb='echo "git checkout -b " ; git checkout -b '
+alias gco='echo "git commit " ; git commit '
+alias gam='echo "git commit --amend" ; git commit --amend'
+alias gbase='echo "git pull --rebase" ; git pull --rebase'
+alias gstash='echo "git stash " ; git stash '
+alias gpull='echo "git pull " ; git pull '
+alias glog='echo "git log oneline" ; git log --pretty=oneline'
+alias gpush='echo "git push origin master" ; git push origin master'
+alias gup='echo "git branch --set-upstream-to=origin/mainline " ; git branch --set-upstream-to=origin/mainline '
+#==========================================================
 
 alias cdmine='cd /Users/pragad/Pragad/ItsMine'
 alias cdko='cd /Users/pragad/Komprise'
@@ -79,6 +106,11 @@ alias scpobprod='echo "scp observer/target/observer-2.2.2.jar kompuser@10.1.155.
 alias scpdirprod='echo "scp director/web/target/web-2.2.2.war  kompuser@10.1.155.40:~/director/apache-tomcat-8.0.24/webapps/ROOT.war" ; scp director/web/target/web-2.2.2.war  kompuser@10.1.155.40:~/director/apache-tomcat-8.0.24/webapps/ROOT.war'
 #alias vim='mvim -v'
 alias python='python3'
+#==========================================================
+#Applications
+alias ch="open -a 'Google Chrome'"
+alias ff="open -a 'Firefox'"
+#==========================================================
 
 ## VIM aliases
 alias vimac='vim /Users/pragad/Pragad/Code/OtherLearnings/MACStuff/macbook_shortcuts.txt'
