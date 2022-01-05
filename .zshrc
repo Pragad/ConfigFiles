@@ -154,9 +154,14 @@ alias srcbashrc='source ~/.bashrc'
 alias srcvimrc='source ~/.vimrc'
 
 ## ## ## ## ## ## ## ## ##
-## Flutter
+## Flutter              ##
 ## ## ## ## ## ## ## ## ##
 export PATH="/Users/pragad/flutter/bin:$PATH"
+
+## ## ## ## ## ## ## ## ##
+## Java              ##
+## ## ## ## ## ## ## ## ##
+#export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 ## Maven
 ## https://crunchify.com/how-to-install-maven-on-mac-os-x-manually-fix-unsupportedclassversionerror-orgapachemavenclimavencli/
