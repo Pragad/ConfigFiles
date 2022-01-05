@@ -2,19 +2,19 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+"Plugin 'VundleVim/Vundle.vim'
 
 " nerd tree using vundle
-Plugin 'scrooloose/nerdtree'
+"Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+"call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -76,7 +76,7 @@ else
   nmap ,cl :let @*=expand("%:p")<CR>
 endif
 " ,cs copies just the filename.
-" ,cl copies the filename including it's full path. 
+" ,cl copies the filename including it's full path.
 
 " Vim Buffers
 nnoremap <Tab> :bnext<cr>
@@ -93,7 +93,7 @@ nnoremap ; :
 nnoremap ' ;
 
 " Paste yanked test multiple times
-" Either use http://stackoverflow.com/questions/290465/vim-how-to-paste-over-without-overwriting-register 
+" Either use http://stackoverflow.com/questions/290465/vim-how-to-paste-over-without-overwriting-register
 " or remap p as follows.
 " 'p' to paste, 'gv' to re-select the newly pasted content. 'y' to copy it again
 xnoremap p pgvy
@@ -152,7 +152,7 @@ if has("autocmd")
     augroup cprog
         " Remove all cprog autocommands
         au!
-        
+
         " When starting to edit a file:
         "   For C and C++ files set formatting of comments and set C-indenting on.
         autocmd FileType *      set formatoptions=tcql nocindent comments&
