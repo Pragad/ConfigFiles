@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/pragad/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -73,12 +73,14 @@ ZSH_THEME="robbyrussell"
 plugins=(
     git
     zsh-autosuggestions
-    zsh-vi-mode
+    zsh-vim-mode
 )
 
 ZSH_DISABLE_COMPFIX=true
 
-bindkey -v
+# https://stackoverflow.com/questions/58187542/how-to-setup-vi-editing-mode-for-zsh#:~:text=bindkey%20%2Dv%20is%20enough%20to,%22insert%22%20mode%20by%20default.
+# The below makes crtl + R not work. So using 'zsh-vim-mode' plugin
+# bindkey -v
 
 source $ZSH/oh-my-zsh.sh
 
@@ -137,34 +139,29 @@ alias gpush='echo "git push origin master" ; git push origin master'
 alias gup='echo "git branch --set-upstream-to=origin/mainline " ; git branch --set-upstream-to=origin/mainline '
 #==========================================================
 
-alias cdmine='cd /Users/pragad/Pragad/ItsMine'
+alias cdmine='cd ~/Pragad/ItsMine'
 
-alias cdco='cd /Users/pragad/Pragad/Code'
-alias cdal='cd /Users/pragad/Pragad/Code/Algos'
-alias cdcp='cd /Users/pragad/Pragad/Code/LearnCpp'
-alias cdpy='cd /Users/pragad/Pragad/Code/LearnPython'
-alias cdja='cd /Users/pragad/Pragad/Code/LearnJava'
-alias cdot='cd /Users/pragad/Pragad/Code/OtherLearnings'
+alias cdco='cd ~/Pragad/Code'
+alias cdal='cd ~/Pragad/Code/Algos'
+alias cdcp='cd ~/Pragad/Code/LearnCpp'
+alias cdpy='cd ~/Pragad/Code/LearnPython'
+alias cdja='cd ~/Pragad/Code/LearnJava'
+alias cdot='cd ~/Pragad/Code/OtherLearnings'
 
 ## VIM aliases
-alias vimac='vim /Users/pragad/Pragad/Code/OtherLearnings/MACStuff/macbook_shortcuts.txt'
+alias vimac='vim ~/Pragad/Code/OtherLearnings/MACStuff/macbook_shortcuts.txt'
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
 alias srcbashrc='source ~/.bashrc'
 alias srcvimrc='source ~/.vimrc'
 
 ## ## ## ## ## ## ## ## ##
-## Flutter              ##
+## Flutter
 ## ## ## ## ## ## ## ## ##
-export PATH="/Users/pragad/flutter/bin:$PATH"
-
-## ## ## ## ## ## ## ## ##
-## Java              ##
-## ## ## ## ## ## ## ## ##
-#export PATH="/usr/local/opt/openjdk/bin:$PATH"
+#export PATH="~/flutter/bin:$PATH"
 
 ## Maven
 ## https://crunchify.com/how-to-install-maven-on-mac-os-x-manually-fix-unsupportedclassversionerror-orgapachemavenclimavencli/
 ##
-export M2_HOME=/Users/pragad/apache-maven-3.8.4
+#export M2_HOME=~/apache-maven-3.8.4
 export PATH=$PATH:$M2_HOME/bin
