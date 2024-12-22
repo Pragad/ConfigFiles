@@ -162,16 +162,16 @@ alias srcvimrc='source ~/.vimrc'
 ##
 #export M2_HOME=~/apache-maven-3.8.4
 export PATH=$PATH:$M2_HOME/bin
-export PATH="/Users/pragad/Library/Python/3.7/bin:$PATH"
-export ANDROID_HOME=~/Library/Android/sdk/
+#export PATH="/Users/pragad/Library/Python/3.7/bin:$PATH"
+#export ANDROID_HOME=~/Library/Android/sdk/
 #export PATH=$PATH:/Users/pragad/Pragad/SmartE/platform-tools/
-export PATH=$PATH:/Users/pragad/Pragad/SmartE/Open-Q_2500_Android_v1.3_JFlash/AdbFastboot/
-export PATH=$PATH:/Users/pragad/Library/Python/3.9/bin/
-export PATH=$PATH:/usr/local/Caskroom/flutter/3.24.3/flutter/bin
+#export PATH=$PATH:/Users/pragad/Pragad/SmartE/Open-Q_2500_Android_v1.3_JFlash/AdbFastboot/
+#export PATH=$PATH:/Users/pragad/Library/Python/3.9/bin/
+#export PATH=$PATH:/usr/local/Caskroom/flutter/3.24.3/flutter/bin
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
