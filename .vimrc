@@ -174,6 +174,10 @@ set shiftwidth=4
 set expandtab
 let g:tab_mode = 4
 
+" Error editing groovy files
+" https://github.com/vim/vim/issues/7280
+set re=0
+
 " https://vim.fandom.com/wiki/Remove_unwanted_spaces
 " https://vi.stackexchange.com/questions/454/whats-the-simplest-way-to-strip-trailing-whitespace-from-all-lines-in-a-file
 autocmd BufWritePre * :%s/\s\+$//e
