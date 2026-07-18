@@ -1,11 +1,5 @@
 # Pragad — Global User Profile
 
-## Identity
-- **Name**: Pragadheeshwaran Thirumurthi (goes by Pragad)
-- **Age**: 38, male, non-vegetarian
-- **Location**: Elmhurst, IL (Chicago area)
-- **Partner**: Anitha Kandasamy
-
 ## Personal Repos
 
 | Repo | Path | Purpose |
