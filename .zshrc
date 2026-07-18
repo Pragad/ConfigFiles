@@ -1,14 +1,22 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-# Path to your oh-my-zsh installation.
-export ZSH=~"/.oh-my-zsh"
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+
+# Path to your Oh My Zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
+# load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,13 +78,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-    git
-    zsh-autosuggestions
-    vi-mode
-)
-
-ZSH_DISABLE_COMPFIX=true
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -91,15 +93,18 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# export ARCHFLAGS="-arch $(uname -m)"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
@@ -131,9 +136,10 @@ alias gbase='echo "git pull --rebase" ; git pull --rebase'
 alias gstash='echo "git stash " ; git stash '
 alias gpull='echo "git pull " ; git pull '
 alias glog='echo "git log oneline" ; git log --pretty=oneline'
-alias gpush='echo "git push origin main" ; git push origin main'
+alias gpush='echo "git push" ; git push'
 alias gpushm='echo "git push origin master" ; git push origin master'
 alias gup='echo "git branch --set-upstream-to=origin/mainline " ; git branch --set-upstream-to=origin/mainline '
+alias gdelbr='command_to_run=$(git branch | grep -vE "^\\* (master|main)$" | xargs -r echo "git branch -D"); echo "Executing: $command_to_run"; eval "$command_to_run"'
 #==========================================================
 
 alias cdmine='cd ~/Pragad/ItsMine'
@@ -152,40 +158,37 @@ alias bashrc='vim ~/.bashrc'
 alias srcbashrc='source ~/.bashrc'
 alias srcvimrc='source ~/.vimrc'
 
-## ## ## ## ## ## ## ## ##
-## Flutter
-## ## ## ## ## ## ## ## ##
-#export PATH="~/flutter/bin:$PATH"
+## Java
+export JAVA_HOME=$(/usr/libexec/java_home)
 
-## Maven
-## https://crunchify.com/how-to-install-maven-on-mac-os-x-manually-fix-unsupportedclassversionerror-orgapachemavenclimavencli/
-##
-#export M2_HOME=~/apache-maven-3.8.4
-export PATH=$PATH:$M2_HOME/bin
-#export PATH="/Users/pragad/Library/Python/3.7/bin:$PATH"
-#export ANDROID_HOME=~/Library/Android/sdk/
-#export PATH=$PATH:/Users/pragad/Pragad/SmartE/platform-tools/
-#export PATH=$PATH:/Users/pragad/Pragad/SmartE/Open-Q_2500_Android_v1.3_JFlash/AdbFastboot/
-#export PATH=$PATH:/Users/pragad/Library/Python/3.9/bin/
-#export PATH=$PATH:/usr/local/Caskroom/flutter/3.24.3/flutter/bin
+## Setup Python
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
-#export NVM_DIR="$HOME/.nvm"
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/pragad/Pragad/HealixAI/HealixCode/GoogleFunctionFirestoreApi/functions/service-account.json"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-#__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-#if [ $? -eq 0 ]; then
-#    eval "$__conda_setup"
-#else
-#    if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-#        . "/opt/anaconda3/etc/profile.d/conda.sh"
-#    else
-#        export PATH="/opt/anaconda3/bin:$PATH"
-#    fi
-#fi
-#unset __conda_setup
-# <<< conda initialize <<<
+# Export GCloud
+export PATH=/opt/homebrew/share/google-cloud-sdk/bin:"$PATH"
 
+# Export Android Studio SDK Tools
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools"
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Enable VI mode in ZSH
+bindkey -v
+
+function zle-line-init zle-keymap-select {
+  if [[ $KEYMAP == vicmd ]]; then
+    echo -ne "\033[1 q"  # block cursor
+  else
+    echo -ne "\033[5 q"  # beam cursor
+  fi
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
+
+bindkey '^R' history-incremental-search-backward
