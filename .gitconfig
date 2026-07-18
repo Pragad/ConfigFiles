@@ -1,7 +1,8 @@
 [user]
-	name = pragad
+	name = Pragad
 	email = talk2pragadheesh@gmail.com
-[core]
-	excludesfile = ~/.gitignore
-[mergetool]
-	keepBackup = false
+[push]
+	autoSetupRemote = true
+	default = current
+[init]
+	defaultBranch = main
