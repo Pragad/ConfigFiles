@@ -20,3 +20,8 @@ To search a term across all personal repos at once:
 ```bash
 grep -r "<term>" /Users/pragad/Pragad/Health /Users/pragad/Pragad/Investment /Users/pragad/Pragad/Shelf
 ```
+
+## AI Collaboration Standards
+Apply these across all personal repos (not just code projects) — see `/Users/pragad/Pragad/Code/AI-Playground/standards/`:
+- `ai-collaboration.md` — model-tier selection, pilot-before-full-run, manifest-based resumability, sub-batch size limits, repo-based agent output persistence. Applies to any bulk/repetitive AI-assisted workflow (lab-result intake, trade-log intake, French-learning intake, etc.).
+- `git-workflow.md` — applies to any personal repo that is itself a git repo (e.g. `Health/Workbook/`), not just HealixAI code: never push directly to main, feature branch + PR for every change, stage specific files only.
